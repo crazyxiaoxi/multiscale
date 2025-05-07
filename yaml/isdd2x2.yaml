@@ -1,0 +1,7 @@
+
+#isdd_origin
+train: /home/xijiawen/data/isdd/2x2/yolo/images/train
+val: /home/xijiawen/data/isdd/2x2/yolo/images/val
+
+nc: 1      # 类别数量（根据实际修改）
+names: ['ship']   # 类别名称列表

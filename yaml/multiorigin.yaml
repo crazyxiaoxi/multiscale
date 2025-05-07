@@ -1,0 +1,11 @@
+
+#isdd_origin
+# train: /home/xijiawen/data/isdd/4x4/yolo/images/train
+# val: /home/xijiawen/data/isdd/4x4/yolo/images/val
+
+#isdd_4x4
+train: /home/shared_directory/datasets/yolo_sdss/SDSS/images/train2017
+val: /home/shared_directory/datasets/yolo_sdss/SDSS/images/test2017
+
+nc: 1      # 类别数量（根据实际修改）
+names: ['ship']   # 类别名称列表
