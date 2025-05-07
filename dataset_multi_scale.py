@@ -58,4 +58,5 @@ class MultiScaleDataset(Dataset):
             "cls": labels[:, 0:1],      # 类别
             "bboxes": labels[:, 1:],    # bboxes 是 xywh 格式，归一化过
         }
+
         return patches_s, patches_m, patches_l, targets

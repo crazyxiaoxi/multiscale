@@ -14,10 +14,8 @@ class MultiScaleYOLO(nn.Module):
 
     def _share_weights(self):
         layers = list(self.model_s.model.children())
-        print(layers[:2])
-        exit()
         # 保留前两层独立，后面完全共享
-        shared = layers[3:]  # 从第三层开始
+        shared = layers[2:]  # 从第三层开始
 
         # 重建 model_m / model_l
         self.model_m.model = nn.Sequential(*layers[:2], *shared)
